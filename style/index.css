@@ -6,12 +6,13 @@ body{
 *
 #header{
     background-color: #0b003c;
-    position: fixed;
+    display: block;
+    position: relative;
     min-width: 100%;
 }
 #headerSection{
     display: grid;
-    grid-template-columns: 2fr  7fr 3fr;
+    grid-template-columns: 2fr 7fr 3fr;
     grid-gap: 10px;
     width: 90%;
     margin: 0px auto;
@@ -21,6 +22,18 @@ body{
     position: ;
 }
 
+.menuSection{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.menuSection button{
+    font-weight: 800;
+    border: none;
+    background: transparent;
+    color: aqua;
+    font-size: 40px;
+}
 .menuBar{
     display: flex;
     justify-content: space-evenly;
@@ -112,3 +125,38 @@ body{
 #search-btn:hover:before{
     width: 100%;
 }
+
+
+#huawei {
+    background-image: url(../image/huawei.jpg);
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+}
+
+#Samsung {
+    background-image: url(../image/samsung.jpg);
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+}
+
+
+#I-phone{
+    background-image: url(../image/iphone.jpg);
+    background-size: cover;
+    color: rgb(255, 0, 0);
+    background-repeat: no-repeat;
+}
+
+#item-container{
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+}
+/* .card-items{
+    background-color: #0b003c;
+}
+.card-items img{
+    border-radius: 25px;
+} */
